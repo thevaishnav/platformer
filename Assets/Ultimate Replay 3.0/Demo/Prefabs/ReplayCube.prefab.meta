@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d0579203b68a7904a8215afc8f429274
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Demo/Prefabs/ReplayCube.prefab
+  uploadId: 780642

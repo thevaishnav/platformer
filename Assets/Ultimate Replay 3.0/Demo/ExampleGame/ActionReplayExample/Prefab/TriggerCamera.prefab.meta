@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4f216c403405e6a48af3d9837b527cba
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Demo/ExampleGame/ActionReplayExample/Prefab/TriggerCamera.prefab
+  uploadId: 780642

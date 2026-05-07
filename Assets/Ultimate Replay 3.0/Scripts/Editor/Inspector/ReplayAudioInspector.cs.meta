@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7dd7f5915279add4ebed0ccdd8c4ccc6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Scripts/Editor/Inspector/ReplayAudioInspector.cs
+  uploadId: 780642

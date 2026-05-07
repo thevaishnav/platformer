@@ -1,16 +1,19 @@
-using System;
-using Platformer.Mechanics;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    private static readonly int DIE = Animator.StringToHash("die");
     [SerializeField] private float _moveSpeed = 5f;
+    [SerializeField] private float _initialWait = 1.2f;
     [SerializeField, Min(0f)] private float _moveAllowedLandingVelocity = 0.1f;
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _groundCheckRadius = 0.2f;
     [SerializeField] private Animator _animation;
 
+    public bool canMove = false;
     private Rigidbody2D _rb2D;
     private bool _isGrounded = false;
     private Transform _currentPlatform;
@@ -22,11 +25,18 @@ public class Character : MonoBehaviour
         _rb2D = GetComponent<Rigidbody2D>();
     }
 
+    private IEnumerator Start()
+    {
+        canMove = false;
+        yield return new WaitForSeconds(_initialWait);
+        canMove = true;
+    }
+
     private void Update()
     {
         UpdateGroundedState();
 
-        if (_isGrounded)
+        if (canMove && _isGrounded)
         {
             Vector3 translation = Vector3.right * (_moveSpeed * Time.deltaTime);
             var currentPlatformDelta = _currentPlatform.position - _currentPlatformLastPosition;
@@ -69,7 +79,8 @@ public class Character : MonoBehaviour
 
     private void Die()
     {
-        // Placeholder for death logic (e.g. respawn, game over)
-        Debug.Log("Character has died!");
+        canMove = false;
+        _animation.SetTrigger(DIE);
+        GameManager.GameOver((int)(transform.position.x * 10f));
     }
 }

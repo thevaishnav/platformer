@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fa4bc13fe6b549b4581cbad7f12c1922
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Demo/ExampleGame/ActionReplayExample/Scripts/CarActionReplay.cs
+  uploadId: 780642

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2eacc03bba273b147a5724f1cb0a841f
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Scripts/Editor/UltimateReplay.Editor.asmdef
+  uploadId: 780642

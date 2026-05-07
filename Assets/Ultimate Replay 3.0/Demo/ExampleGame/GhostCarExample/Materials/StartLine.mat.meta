@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbb3302eeb388114f9b8a82b3318f2a1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Demo/ExampleGame/GhostCarExample/Materials/StartLine.mat
+  uploadId: 780642

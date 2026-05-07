@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 96cc5263804c91e499e7660f85fc8cdb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Scripts/Editor/Window/ReplayHumanoidConfiguratorWindow.cs
+  uploadId: 780642

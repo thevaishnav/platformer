@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5e1a0b1ad8f4e984a89f5f1ce60f6f1c
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Demo/ExampleGame/GhostCarExample/UltimateReplay.GhostCarDemo.asmdef
+  uploadId: 780642

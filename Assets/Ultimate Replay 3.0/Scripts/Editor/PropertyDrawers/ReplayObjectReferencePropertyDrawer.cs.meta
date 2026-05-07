@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a58b08d55bb0a3743aab20c1789cc858
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261742
+  packageName: Ultimate Replay 3.0 - Trial Version
+  packageVersion: 3.3.2
+  assetPath: Assets/Ultimate Replay 3.0/Scripts/Editor/PropertyDrawers/ReplayObjectReferencePropertyDrawer.cs
+  uploadId: 780642
