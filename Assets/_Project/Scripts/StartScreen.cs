@@ -25,7 +25,7 @@ public class StartScreen : MonoBehaviour
     {
         StartCoroutine(_animation.PlayOffAnimation(() => {
             gameObject.SetActive(false);
-            GameManager.StartGame();
+            GameManager.Instance.StartGame();
         }));
     }
 }

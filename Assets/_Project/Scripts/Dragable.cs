@@ -3,7 +3,10 @@ using UnityEngine.EventSystems;
 
 public class DraggableSprite : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
-    [Header("Drag Settings")] public Vector2 maxDragDistance = new Vector2(3f, 3f);
+    [Header("Drag Settings")] 
+    public Vector2 maxDragDistance = new Vector2(3f, 3f);
+    
+    private bool _isDragging = false;
     private Vector3 _initialPosition;
     private Vector3 _dragOffset;
     private Camera _mainCamera;
@@ -18,19 +21,27 @@ public class DraggableSprite : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         Vector3 worldPoint = GetWorldPosition(eventData);
         _dragOffset = transform.position - worldPoint;
+        _isDragging = true;
+        ManageCamera.OnCameraTransitionStart += OnCameraTransitionStart;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (!_isDragging) return;
         Vector3 targetPosition = GetWorldPosition(eventData) + _dragOffset;
         transform.position = ClampToMaxDistance(targetPosition);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        // Hook for release logic (e.g. snap back) if needed
+        _isDragging = false;
     }
 
+    private void OnCameraTransitionStart()
+    {
+        _isDragging = false;
+    }
+    
     private Vector3 GetWorldPosition(PointerEventData eventData)
     {
         Vector3 screenPos = eventData.position;

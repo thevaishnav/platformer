@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameOverScreen : MonoBehaviour
 {
     [SerializeField] private UiAnimation _animation;
+    [SerializeField] private TMP_Text _tease;
     [SerializeField] private TMP_Text _currentScoreText;
     [SerializeField] private TMP_Text _bestScoreText;
     [SerializeField] private Button _restartButton;
@@ -28,15 +29,16 @@ public class GameOverScreen : MonoBehaviour
     [ContextMenu("Show Game Over Screen")]
     private void ShowGameOverScreenForTesting()
     {
-        Show(123, 456);
+        Show(123, 456, "bruh");
     }
 
-    public void Show(int currentScore, int bestScore)
+    public void Show(int currentScore, int bestScore, string tease)
     {
         gameObject.SetActive(true);
         StartCoroutine(_animation.PlayOnAnimation());
         _currentScoreText.text = currentScore.ToString();
         _bestScoreText.text = bestScore.ToString();
+        _tease.text = tease;
     }
     
     [ContextMenu("Hide")]

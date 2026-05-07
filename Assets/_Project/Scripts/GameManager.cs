@@ -2,31 +2,31 @@
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager _instance;
+    public static GameManager Instance { get; private set; }
     
     [SerializeField] private StartScreen _startScreen;
     [SerializeField] private GameOverScreen _gameOverScreen;
     [SerializeField] private Character _character;
+    [SerializeField] private Transform _endPoint;
 
     private void Awake()
     {
-        if (_instance != null && _instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-        
-        _instance = this;
-        DontDestroyOnLoad(gameObject);
+
+        Instance = this;
         _character.gameObject.SetActive(false);
     }
 
-    public static void StartGame()
+    public void StartGame()
     {
-        _instance._character.gameObject.SetActive(true);
+        Instance._character.gameObject.SetActive(true);
     }
-    
-    public static void GameOver(int currentScore)
+
+    public void GameOver(int currentScore)
     {
         int bestScore = PlayerPrefs.GetInt("BestScore", 0);
         if (currentScore > bestScore)
@@ -34,8 +34,12 @@ public class GameManager : MonoBehaviour
             bestScore = currentScore;
             PlayerPrefs.SetInt("BestScore", bestScore);
         }
-        
-        _instance._character.canMove = false;
-        _instance._gameOverScreen.Show(currentScore, bestScore);
+
+        var percentage = (100f * currentScore) / Character.GetScoreFromPosition(_endPoint.position.x);
+        var tease = GameOverPhrases.GetPhrase((int)percentage);
+        _character.canMove = false;
+        _gameOverScreen.Show(currentScore, bestScore, tease);
     }
+
+    
 }
