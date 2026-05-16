@@ -11,7 +11,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49fcb209645d4ccfb3e373da32345d37a6aa00/5c/428307f1/Selection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dragable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/ManageCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/SpawnOnImpact.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -96,6 +98,7 @@
       <updated>1778060976436</updated>
       <workItem from="1778060979303" duration="2783000" />
       <workItem from="1778145092226" duration="5789000" />
+      <workItem from="1778922705439" duration="1922000" />
     </task>
     <servers />
   </component>
